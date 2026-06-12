@@ -5,7 +5,7 @@ public class Livro{
     private int anoPub;
     private boolean disponivel;
 
-   public Livro(String isbn, String titulo, String autor, int anoPub, boolean disponivel){
+   public Livro(String isbn, String titulo, String autor, int anoPub){
     this.isbn = isbn;
     this.titulo = titulo;
     this.autor = autor;
@@ -52,7 +52,7 @@ public class Livro{
         return "[" + isbn + "] " + titulo + " - " + autor + " (" + anoPub + ") [" + status + "]";
     }
 
-    // Método equals() comparando pelo ISBN
+  
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
